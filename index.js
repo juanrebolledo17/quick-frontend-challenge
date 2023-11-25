@@ -27,7 +27,7 @@ function startReverseSequence(elements) {
     clickedElementIndex = orderOfClicks[j];
     orderOfClicks.splice(j, 1);
     elements.forEach((element, index) => {
-      if (index === Number(clickedElementIndex)) {
+      if (index === clickedElementIndex) {
         setTimeout(() => {
           element.style.backgroundColor = 'transparent';
         }, frequency); 
